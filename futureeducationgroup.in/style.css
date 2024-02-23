@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.carousel-inner {
+    background: transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.menu-bar {
+    background: drak;
+    text-align: justify;
+    text-emphasis-color: black;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li {
+    width: 100px;
+    margin: 0.5px;
+    padding: 5px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.active,
+.menu-bar ul li:hover {
+    background: rgb(50, 60, 205);
+    border-radius: 3px;
+}
+
+.menu-bar .fa {
+    margin-right: 1px;
+}
+
+.Sub-menu-1 {
+    display: none;
+}
+
+.menu-bar ul li:hover .Sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: rgb(198, 231, 6);
+    margin-top: 10px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .Sub-menu-1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .Sub-menu-1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 10px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.menu-bar ul li:hover .Sub-menu-1 ul li:last-child {
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .Sub-menu-1 ul li a:hover {
+    color: whitesmoke;
+}
+
+.fa-angle-double-right {
+    float: left;
+}
